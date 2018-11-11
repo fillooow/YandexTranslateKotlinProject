@@ -27,7 +27,7 @@ class TranslateFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        activity?.actionBar?.title = "переводчик1"
+        activity?.actionBar?.title = "переводчик2"
     }
 
 

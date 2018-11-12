@@ -6,4 +6,112 @@
     <string name="translate_icon">Переводчик</string>
     <string name="bookmarks_history_navigation">Закладки и история</string>
     <string name="settings">Настройки</string>
+    <string name="aaaaaa">FEATURED ON META
+Data science time! November 2018 and CORRELATIONS
+HOT META POSTS
+8 What to do with existing answers when a method is renamed in an API?
+18 When do I use Stack Overflow vs Game Development?
+34 Why do I need 125 reputation to downvote but only 15 to upvote?
+Linked
+107
+Android new Bottom Navigation bar or BottomNavigationView
+Related
+2305
+Saving Android Activity state using Save Instance State
+1252
+Activity restart on rotation Android
+2490
+Stop EditText from gaining focus at Activity startup
+1099
+How do I pass data between Activities in Android application?
+971
+Activity has leaked window that was originally added
+943
+Download a file with Android, and showing the progress in a ProgressDialog
+18
+Bug: onNewIntent not called for singleTop activity with Intent.FLAG_ACTIVITY_NEW_TASK
+0
+How do I refresh my ListView after the Activity launched by “new Intent(ContactsContract.Intents.Insert.ACTION)” finishes?
+4
+Glass: How to gracefully exit on a downswipe to the main menu
+2
+setText on button from another activity android
+Hot Network Questions
+On proof-verification using Coq
+How to secure passwords over HTTP
+Why would a member of the lower class approve of his oppressors?
+How to prevent my child from being indoctrinated with Christianity?
+How do you take field notes at below 0 °C, without freezing fingers?
+Did the Apollo lunar module descent stage have a role as a sort of service module?
+Find the tangent line to a curve
+Does a monks Unarmed Strikes deal 2d4 damage if they have the Tavern Brawler feat?
+In astronomy Is there a name for the exact time between solar noon and sunset?
+age twin puzzle
+How do I save some lines but not all?
+How to define a variable as another variable divided by two?
+Multiplicity Test
+If soul reincarnation is real, then with an increasing population, why doesnt the world run out of souls?
+Compute count of unique words using ES6 sets
+Is password entry being recorded on camera a realistic concern?
+Should I volunteer for a pay cut?
+How to handle lecturer who doesnt let me use my phone?
+How can I argue that for a number to be divisible by 144 it has to be divisible by 36?
+Smaller and cheaper alternative to Arduino Uno for permanent projects
+How to get code coverage on formula fields in a wrapper class
+Why would a country persecute people with autism?
+humans born insaneoof-verification using Coq
+How to secure passwords over HTTP
+Why would a member of the lower class approve of his oppressors?
+How to prevent my child from being indoctrinated with Christianity?
+How do you take field notes at below 0 °C, without freezing fingers?
+Did the Apollo lunar module descent stage have a role as a sort of service module?
+Find the tangent line to a curve
+Does a monks Unarmed Strikes deal 2d4 damage if they have the Tavern Brawler feat?
+In astronomy Is there a name for the exact time between solar noon and sunset?
+age twin puzzle
+How do I save some lines but not all?
+How to define a variable as another variable divided by two?
+Multiplicity Test
+If soul reincarnation is real, then with an increasing population, why doesnt the world run out of souls?
+Compute count of unique words using ES6 sets
+Is password entry being recorded on camera a realistic concern?
+Should I volunteer for a pay cut?
+How to handle lecturer who doesn't let me use my phone?
+How can I argue that for a number to be divisible by 144 it has to be divisible by 36?
+Smaller and cheaper alternative to Arduino Uno for permanent projects
+How to get code coverage on formula fields in a wrapper class
+Why would a country persecute people with autism?
+humans born insane
+Was it a cat I saw?
+ question feed
+    setText on button from another activity android
+Hot Network Questions
+On proof-verification using Coq
+How to secure passwords over HTTP
+Why would a member of the lower class approve of his oppressors?
+How to prevent my child from being indoctrinated with Christianity?
+How do you take field notes at below 0 °C, without freezing fingers?
+Did the Apollo lunar module descent stage have a role as a sort of service module?
+Find the tangent line to a curve
+Does a monk's Unarmed Strikes deal 2d4 damage if they have the Tavern Brawler feat?
+In astronomy Is there a name for the exact time between solar noon and sunset?
+age twin puzzle
+How do I save some lines but not all?
+How to define a variable as another variable divided by two?
+Multiplicity Test
+If soul reincarnation is real, then with an increasing population, why doesn't the world run out of souls?
+Compute count of unique words using ES6 sets
+Is password entry being recorded on camera a realistic concern?
+Should I volunteer for a pay cut?
+How to handle lecturer who doesn't let me use my phone?
+How can I argue that for a number to be divisible by 144 it has to be divisible by 36?
+Smaller and cheaper alternative to Arduino Uno for permanent projects
+How to get code coverage on formula fields in a wrapper class
+Why would a country persecute people with autism?
+humans born insane
+Was it a cat I saw?
+ question feed</string>
+    <string name="language_swap">поменять языки местами</string>
+    <string name="test_language_1">Язык 1</string>
+    <string name="test_language_2">Язык 2</string>
 </resources>

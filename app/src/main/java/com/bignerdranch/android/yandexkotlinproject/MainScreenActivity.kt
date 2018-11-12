@@ -17,11 +17,11 @@ class MainScreenActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main_screen)
 
         //toolbar = toolbar_main
-        setSupportActionBar(toolbar_main)
+        //setSupportActionBar(toolbar_main)
         loadFragment(TranslateFragment(), false)
         bottom_navigation_main.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
-        toolbar_main.title = resources.getString(R.string.translate_icon)
+        //toolbar_main.title = resources.getString(R.string.translate_icon)
     }
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener {
@@ -32,12 +32,12 @@ class MainScreenActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener  true
             }
             R.id.bookmarks_history_navigation ->  {
-                toolbar_main.title = resources.getString(R.string.bookmarks_history_navigation)
+                //toolbar_main.title = resources.getString(R.string.bookmarks_history_navigation)
                 loadFragment(BookmarksHistoryFragment(), false)
                 return@OnNavigationItemSelectedListener  true
             }
             R.id.settings_navigation -> {
-                toolbar_main.title = resources.getString(R.string.settings)
+                //toolbar_main.title = resources.getString(R.string.settings)
                 loadFragment(SettingsFragment(), false)
                 return@OnNavigationItemSelectedListener  true
             }

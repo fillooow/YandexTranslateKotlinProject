@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <!--TODO: change solid (разобраться с ним, хз зачем он нужен)-->
-    <solid android:color="#FFFFFF"/>
+    <solid android:color="@color/fragment_translate_white"/>
 
     <stroke android:width="2dp"
-        android:color="#FFFFFF"/>
+        android:color="@color/fragment_translate_white"/>
 
     <padding android:left="2dp"
         android:top="2dp"

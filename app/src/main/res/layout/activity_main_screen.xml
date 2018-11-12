@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainScreenActivity"
-    android:background="@color/colorPrimary">
+    android:background="@color/yandexColor">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
+        android:background="@color/yandexColor"
         android:orientation="horizontal"
         android:weightSum="100"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,6 +25,8 @@
             android:layout_height="match_parent"
             android:layout_weight="45"
             android:gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
             android:text="@string/test_language_1" />
 
         <ImageButton

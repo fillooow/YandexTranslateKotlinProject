@@ -8,56 +8,14 @@
     tools:context=".MainScreenActivity"
     android:background="@color/yandexColor">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/yandexColor"
-        android:orientation="horizontal"
-        android:weightSum="100"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/source_language"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="45"
-            android:gravity="center"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:text="@string/test_language_1" />
-
-        <ImageButton
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_weight="10"
-            android:contentDescription="@string/language_swap"
-            android:src="@drawable/ic_swap_languages" />
-
-        <TextView
-            android:id="@+id/required_language"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="45"
-            android:gravity="center"
-            android:text="@string/test_language_2" />
-    </LinearLayout>
-
     <FrameLayout
         android:id="@+id/frame_container_main"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_main"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        android:background="@drawable/frame_layout_rounded_shape" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottom_navigation_main"

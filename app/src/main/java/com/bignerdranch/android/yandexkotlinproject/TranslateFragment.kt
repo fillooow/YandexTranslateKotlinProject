@@ -8,6 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.disposables.Disposable
+import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.fragment_translate.*
 
 
@@ -21,6 +24,15 @@ private const val ARG_PARAM2 = "param2"
  *
  */
 class TranslateFragment : Fragment() {
+
+    // singleton WAS object, it's created lazily when the first time it used. After that it will
+    // be reused without creation
+    val wikiApiService by lazy {
+        WikiApiService.create()
+    }
+
+    // tracks the fetching activity. Synchronise data fetching and app (really?)
+    var disposable: Disposable? = null
 
     lateinit var swapImageButton: ImageButton
     lateinit var sourceLanguageTV: TextView
@@ -55,4 +67,13 @@ class TranslateFragment : Fragment() {
         requiredLanguageTV.text = tempStr
     }
 
+    private fun beginSearch(srsearch: String) {
+        disposable = wikiApiService
+                .hitCountCheck("query", "json", "search", srsearch)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(
+                        {result -> translated_text.text = "${result.query.searchinfo.totalhits} results found" }
+                )
+    }
 }

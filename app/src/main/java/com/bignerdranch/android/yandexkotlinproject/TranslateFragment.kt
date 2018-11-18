@@ -25,10 +25,15 @@ private const val ARG_PARAM2 = "param2"
  */
 class TranslateFragment : Fragment() {
 
+    companion object {
+        private val API_KEY: String =
+                "trnsl.1.1.20170330T085156Z.928b6e6d5afb8d9a.32082885800f6b054b0b0ec2becc4adf884fb27a"
+    }
+
     // singleton WAS object, it's created lazily when the first time it used. After that it will
     // be reused without creation
-    val wikiApiService by lazy {
-        WikiApiService.create()
+    val yandexApiService by lazy {
+        YandexApiService.create()
     }
 
     // tracks the fetching activity. Synchronise data fetching and app (really?)
@@ -65,15 +70,16 @@ class TranslateFragment : Fragment() {
         var tempStr = sourceLanguageTV.text
         sourceLanguageTV.text = requiredLanguageTV.text
         requiredLanguageTV.text = tempStr
+        beginSearch("qwe")
     }
 
     private fun beginSearch(srsearch: String) {
-        disposable = wikiApiService
-                .hitCountCheck("query", "json", "search", srsearch)
+        disposable = yandexApiService
+                .translateText(API_KEY, "муравей", "ru-en", "plain")
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(
-                        {result -> translated_text.text = "${result.query.searchinfo.totalhits} results found" }
+                        {result -> translated_text.text = "${result.text.get(0)} translated" }
                 )
     }
 }
